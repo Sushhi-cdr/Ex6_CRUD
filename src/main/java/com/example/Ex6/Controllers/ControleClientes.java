@@ -16,7 +16,7 @@ public class ControleClientes {
 
     @PostMapping
     public Clientes criar(@RequestBody Clientes clientes){
-        return servico.save(clientes);
+        return servico.criar(clientes);
     }
 
     @GetMapping
