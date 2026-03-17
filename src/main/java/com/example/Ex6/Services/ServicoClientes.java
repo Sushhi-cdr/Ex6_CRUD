@@ -21,11 +21,11 @@ public class ServicoClientes {
         return repositorio.findAll();
     }
 
-    public Clientes buscar(Long id){
+    public Clientes buscarPorId(Long id){
         return repositorio.findById(id).orElse(null);
     }
 
-    public void remover(Long id){
+    public void deletar(Long id){
         repositorio.deleteById(id);
     }
 }
